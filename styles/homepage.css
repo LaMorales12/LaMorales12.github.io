@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+.man,
+.little,
+.house,
+.devil,
+.directive {
+  max-width: 100%;
+  height: 200px;
+}
+
+.one,
+.three,
+.five {
+  background-color: lightblue;
+}
+
+.two,
+.four {
+  background-color: lightpink;
+}
+
+.nav-links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.header {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.corner {
+  width: 150px;
+}
+
+.heading {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 70px;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.dark-description {
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+}
