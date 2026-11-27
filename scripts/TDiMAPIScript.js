@@ -14,8 +14,10 @@ button.addEventListener('click', async () => {
   const game = data[1567020].data;
   console.log(JSON.stringify(data, null, 2));
   const gallery = document.getElementById('gallery');
+  const movieGallery = document.getElementById('movieGallery');
 
   let screenshotsHTML = '';
+  let moviesHTML = '';
 
   game.screenshots.forEach(screenshot => {
     screenshotsHTML += `
@@ -26,7 +28,20 @@ button.addEventListener('click', async () => {
     `;
   });
 
+  game.movies.forEach(movie => {
+    moviesHTML += `
+      <div class="movie">
+          <img src="${movie.thumbnail}" alt="${movie.name}">
+          <p>${movie.name}</p>
+          <a href="${movie.hls_h264}" target="_blank">
+            Watch Trailer
+          </a>
+      </div>
+    `;
+  });
+
   gallery.innerHTML = screenshotsHTML;
+  movieGallery.innerHTML = moviesHTML;
 
   output.innerHTML = `
         <h1>${game.name}</h1>
