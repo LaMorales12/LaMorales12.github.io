@@ -7,23 +7,30 @@
   <script src="scripts/MoMAPIScript.js" defer></script>
 </head>
 
-<body style="padding-bottom: 1000px;">
-  <h1>Man of Medan</h1>
-  <p>In Man of Medan&#44; five friends set sail on a holiday diving
-    trip that soon changes into something much more sinister&#8230;
-  </p>
-  <a href="index.html" title="Go to home page">
-    <img src="cover-art/The_Dark_Pictures_Anthology_skull_logo.png" alt="Dark Pictures Logo">Go to home</a>
-  <a href="littleHope.html" title="Go to Little Hope page">
-    <img src="cover-art/Dark_Pictures_Little_Hope_cover_art.jpg" alt="Little Hope Logo">Go to next game</a>
-  <button id="fetch-button">Click me!</button>
-  <div id="output">
+<body>
+  <header class="manOfMedanHeader">
+    <section class="homePage">
+      <a href="index.html" title="Go to home page">
+        <img src="cover-art/The_Dark_Pictures_Anthology_skull_logo.png" alt="Dark Pictures Logo"></a>
+    </section>
+    <section class="nameAndDescription">
+      <h1>Man of Medan</h1>
+      <p>In Man of Medan&#44; five friends set sail on a holiday diving
+        trip that soon changes into something much more sinister&#8230;
+      </p>
+    </section>
+    <section class="nextGame">
+      <a href="littleHope.html" title="Go to Little Hope page">
+        <img src="cover-art/Dark_Pictures_Little_Hope_cover_art.jpg" alt="Little Hope Logo"></a>
+    </section>
+  </header>
 
-  </div>
+  <main class="mainButtons">
+    <button id="gallery-button">Gallery</button>
+    <button id="movieGallery-button">Trailers</button>
+    <button id="characters-button">Characters</button>
+  </main>
   <div id="gallery">
-
-  </div>
-  <div id="movieGallery">
 
   </div>
 </body>

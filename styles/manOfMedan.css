@@ -1,5 +1,5 @@
-img {
-  width: 200px;
+body {
+  background-color: cadetblue;
 }
 
 #gallery {
@@ -14,3 +14,62 @@ img {
   object-fit: cover;
   border-radius: 8px;
 }
+
+.character-card1 img,
+.character-card2 img,
+.character-card3 img,
+.character-card4 img,
+.character-card5 img {
+  align-self: center;
+}
+
+.character-card1 p,
+.character-card1 h3,
+.character-card2 p,
+.character-card2 h3,
+.character-card3 p,
+.character-card3 h3,
+.character-card4 p,
+.character-card4 h3,
+.character-card5 p,
+.character-card5 h3 {
+  text-align: center;
+}
+
+.character-card1 h3,
+.character-card2 h3,
+.character-card3 h3,
+.character-card4 h3,
+.character-card5 h3 {
+  font-weight: bold;
+}
+
+.mainButtons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 20px;
+}
+
+.mainButtons button {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.36);
+}
+
+.manOfMedanHeader {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  gap: 10px;
+}
+
+.homePage {}
+
+.nameAndDescription {}
+
+.nextGame {}
